@@ -1,4 +1,4 @@
-# REST Countries API with color theme switcher
+# Countries Rest API with Reactjs and Tailwind CSS
 This is an application that gives some information about all countries in the world.
 
 <br>
