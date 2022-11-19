@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# REST Countries API with color theme switcher
+This is an application that gives some information about all countries in the world.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+<br>
+<div align="center">
+  
+![Badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Badge](https://img.shields.io/badge/-ReactJs-61DAFB?style=for-the-badge&logo=react&logoColor=white) 
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+## Build-With:
 
-### `npm start`
+- redux toolkit
+- react-icons
+- tailwindcss
+- axios
+- Rest Countrues -> https://restcountries.com/v3.1/all
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
+- See all countries from the API.
+- Search for a country using an `input` field. 
+- Filter countries by region.
+- Click on a country to see more detailed information on a separate page.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Installation
+```sh
+$ git clone https://github.com/dsagredo/project-reactjs-flags.git
+$ cd project-reactjs-flags/
+$ npm install
+$ npm start
+```
+<p align="center">
+<img width="1727" alt="Captura de Pantalla 2022-07-19 a la(s) 18 04 59" src="https://user-images.githubusercontent.com/24228373/202852781-e5b796a6-ab24-45c3-a74c-be55177fabe4.png">
+<img width="1728" alt="Captura de Pantalla 2022-07-19 a la(s) 18 05 17" src="https://user-images.githubusercontent.com/24228373/202852788-02b87a85-f2f5-4a6b-ad71-f36f92d7589c.png">
+</p>
