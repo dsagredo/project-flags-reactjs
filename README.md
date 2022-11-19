@@ -15,7 +15,7 @@ This is an application that gives some information about all countries in the wo
 - react-icons
 - tailwindcss
 - axios
-- Rest Countrues -> https://restcountries.com/v3.1/all
+- api rest countrues -> https://restcountries.com/v3.1/all
 
 ## Features
 - See all countries from the API.
