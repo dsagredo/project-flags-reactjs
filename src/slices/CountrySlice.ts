@@ -1,36 +1,42 @@
-import {createSlice, createAsyncThunk, PayloadAction} from "@reduxjs/toolkit";
-import getCountry from "../api/countryAPI";
-import { Data, CountryAPI } from "../interface/Country.interface";
+import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
+import getCountry from '../api/countryAPI';
+import { Data, CountryAPI } from '../interface/Country.interface';
 
-const initialState : Data = {
-  data:[],
-  loading: false,
-  message: "",
-  filtered: null,
+const initialState: Data = {
+    data: [],
+    loading: false,
+    message: '',
+    filtered: null,
 };
 
-export const getCountries = createAsyncThunk("countries/getCountries", async () => {
-    const {data} = await getCountry();
-    return data;
-});
+export const getCountries = createAsyncThunk(
+    'countries/getCountries',
+    async () => {
+        const { data } = await getCountry();
+        console.log('data', data);
+        return data;
+    }
+);
 
 const countrySlice = createSlice({
-    name: "countries",
+    name: 'countries',
     initialState,
     reducers: {
-      filterCountries(state, action) {
-        state.filtered = action.payload;
-      },
+        filterCountries(state, action) {
+            state.filtered = action.payload;
+        },
     },
     extraReducers: (builder) => {
-        builder.addCase(getCountries.fulfilled, (state, action: PayloadAction<CountryAPI[]>) => {
-          state.data = action.payload;
-          state.loading = true;
-        })
+        builder.addCase(
+            getCountries.fulfilled,
+            (state, action: PayloadAction<CountryAPI[]>) => {
+                state.data = action.payload;
+                state.loading = true;
+            }
+        );
     },
 });
 
 export const { filterCountries } = countrySlice.actions;
-
 
 export default countrySlice.reducer;
