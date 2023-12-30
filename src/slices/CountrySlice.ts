@@ -13,7 +13,6 @@ export const getCountries = createAsyncThunk(
     'countries/getCountries',
     async () => {
         const { data } = await getCountry();
-        console.log('data', data);
         return data;
     }
 );
